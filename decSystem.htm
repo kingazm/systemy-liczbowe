@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kinga Żmuda">
+    <title>Systemy liczbowe i ich zastosowania</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="icon.ico"/>
+  </head>
+
+  <body>
+    <body background ="bg.png">
+      <div id="navBar">
+
+        <a class="active" href="javascript:void(0)"> </a>
+        <a href="mainPage.htm">Główna</a>
+        <a href="intro.htm">Wstęp</a>
+        <a href="romanSystem.htm">Rzymski</a>
+        <a href="binarySystem.htm">Binarny</a>
+        <a href="threeSystem.htm">Trójkowy</a>
+        <a href="octSystem.htm">Oktalny</a>
+        <a href="decSystem.htm">Decymalny</a>
+        <a href="hexdecSystem.htm">Heksadecymalny</a>
+          <a href="oneSystem.htm">Jedynkowy</a>
+        <a href="sixtySystem.htm">Sześćdziesiętny</a>
+        <a href="about.htm">O stronie</a>
+      </div>
+
+    <div class="content">
+      <h2>System dziesiętny (decymalny)</h2>
+
+      <p>To system pozycyjny, którym obecnie najczęściej się posługujemy, np. na lekcjach matematyki czy w codziennych rachunkach. Jego podstawą jest 10 i używa się w nim wszystkich 10 cyfr arabskich:</p>
+</p><span style="background-color: #4caf50">0, 1, 2, 3, 4, 5, 6, 7, 8, 9</span></p>
+<p>[Przykład liczby: 1257<sub>10</sub> / 1257<sub>D</sub>]</p>
+<p>Mówi się, że system ten powstał w Indiach, ale do Europy dotarł przez Arabów, stąd też nazwa samych stosowanych w nim znaków. Ten nowy zapis około XIV wieku zastąpił zapis rzymski.
+</p><p><span style="background-color: #4caf50">&#129470 CIEKAWOSTKA:</span> Jedną z pierwszych książek wprowadzającą termin cyfr arabskich jest wydana na początku XIII wieku <span style="background-color: #4caf50">“Liber abaci”</span> (łac. Księga rachunków/Księga liczydła) autorstwa Leonarda z Pizy, szerzej znanego w matematycznym świecie jako Fibonacci.
+W tym samym dziele zaprezentował on także swój słynny już ciąg.</p>
+<p></p>
+<img src="fibonacci.jpg"/>
+<p></p>
+
+<p>W systemie dziesiętnym wartość liczby składa się z sumy jej cyfr pomnożonych przez potęgi liczby dziesięć zaczynając od lewej i potęgi równej ilości cyfr pomniejszonej o 1.
+np. 213<sub>10</sub> = 2 &#215; 10<sup>2</sup> + 1 &#215; 10<sup>1</sup> + 3 &#215; 10<sup>0</sup></p>
+<p>W przypadku ułamków dziesiętnych, całości są traktowane tak, jak powyżej, natomiast cyfry po przecinku są mnożone przez 10 do potęgi -1 w przypadku części dziesiętnej, -2 dla części setnej, -3 dla części tysięcznej itd. oraz oczywiście dodawane do całości.
+np. 2,031 = 2 &#215; 10<sup>0</sup> + 0 &#215; 10<sup>-1</sup> + 3 &#215; 10<sup>-2</sup> + 1 &#215; 10<sup>-3</sup></p>
+<p>To, jak działa konwersja z systemu decymalnego na inne systemy pozycyjne oraz odwrotnie jest wyjaśnione z notatkach na temat każdego z nich.
+
+</p>
+
+
+
+
+
+    </div>
+      <div id="footer">
+        <p>Autor: Kinga Żmuda | Czcionka na darmowej licencji firmy <a href="http://fonts.googleapis.com/css?family=Roboto">Google</a></p>
+
+      </div>
+
+      <script>
+      window.onscroll = function() {
+        nav()
+      };
+
+      var navbar = document.getElementById("navBar");
+      var sticky = navbar.offsetTop;
+
+      function nav() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kinga Żmuda">
+    <title>Systemy liczbowe i ich zastosowania</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="icon.ico"/>
+  </head>
+
+  <body>
+    <body background ="bg.png">
+      <div id="navBar">
+        <a class="active" href="javascript:void(0)"> </a>
+        <a href="mainPage.htm">Główna</a>
+        <a href="intro.htm">Wstęp</a>
+        <a href="romanSystem.htm">Rzymski</a>
+        <a href="binarySystem.htm">Binarny</a>
+        <a href="threeSystem.htm">Trójkowy</a>
+        <a href="octSystem.htm">Oktalny</a>
+        <a href="decSystem.htm">Decymalny</a>
+        <a href="hexdecSystem.htm">Heksadecymalny</a>
+          <a href="oneSystem.htm">Jedynkowy</a>
+        <a href="sixtySystem.htm">Sześćdziesiętny</a>
+        <a href="about.htm">O stronie</a>
+      </div>
+
+    <div class="content">
+      <h2>Wstęp</h2>
+      <h4>O systemach zapisu liczb słów kilka</h4>
+      <p>Istnieje wiele różnych, rzadziej lub częściej używanych, systemów liczenia, czyli metod tworzenia liczb ze znaków oraz reguł umożliwiających wykonywanie operacji arytmetycznych na tych liczbach.
+        Ich podstawą są systemy liczbowe, które dzielą się na dwa rodzaje:</p><ul>
+        <li>addytywne</li>
+        <li>pozycyjne</li></ul>
+
+      <p>Systemy addytywne to te, w których liczby tworzy się poprzez sumowanie wartości jej znaków. Do tych systemów zalicza się przede wszystkim system rzymski. </p>
+
+    <p> <span style="background-color: #4caf50">Pozycyjne systemy liczbowe</span> to sposoby zapisywania liczb za pomocą skończonego zbioru znaków, takiego jak choćby cyfry arabskie lub litery alfabetu.
+      Wartość liczbowa danej cyfry jest zależna od jej pozycji względem innych, sąsiednich znaków.
+      Tak, jak 1 stojąca bez innych cyfr ma wartość równą jeden, ale kiedy umieści się ją przed dwójką, w taki sposób 12, to jedynka reprezentuje wartość jednej dziesiątki.
+    </p>
+<p>Pojęciem ściśle związanym z systemami pozycyjnymi jest tzw.  <span style="background-color: #4caf50">podstawa systemu pozycyjnego</span>, czyli liczba określająca ilość używanych w systemie znaków.
+Przykładowo, podstawą popularnego systemu dziesiętnego, jest liczba dziesięć, stosuje się w nim 10 cyfr - stąd nazwa.
+Podstawa systemu pozycyjnego jest używana do obliczania wartości tej liczby w systemie decymalnym.</p>
+<p></p>
+<img src="calkowita.jpg"/>
+<p></p>
+
+<p>Aby nie pogubić się przy omawianiu różnych systemów pozycyjnych, oznacza się je z reguły umieszczając w indeksie dolnym podstawę systemu lub pierwszą literę angielskiej nazwy danego systemu, np. <span style="background-color: #4caf50">123<sub>D</sub>/123<sub>10</sub></span> to liczba 123 zapisana w systemie dziesiętnym (decymalnym). Każde takie oznaczenie zostanie zaprezentowane w opisie konkretnego systemu, aby późniejsze stosowanie nie stanowiło problemu w lekturze.
+</p>
+<p>Na tej stronie skupię się głównie na przykładach pozycyjnych systemów liczbowych, ponieważ są one obecnie szerzej stosowane, jednak warto również przeczytać artykuł na temat systemu rzymskiego.
+Zarówno pozycyjnych, jak i addytywnych istnieje bardzo dużo i ciężko byłoby mi omówić je wszystkie, dlatego wybrałam kilka przykładów, które są moim zdaniem najciekawszymi lub najbardziej popularnymi.
+</p>
+
+
+<h3> <span style="background-color: #4caf50">Zapraszam do zajrzenia w inne zakładki strony!</span></h3>
+
+
+    </div>
+      <div id="footer">
+        <p>Autor: Kinga Żmuda | Czcionka na darmowej licencji firmy <a href="http://fonts.googleapis.com/css?family=Roboto">Google</a></p>
+
+      </div>
+
+      <script>
+      window.onscroll = function() {nav()};
+
+      var navbar = document.getElementById("navBar");
+      var sticky = navbar.offsetTop;
+
+      function nav() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kinga Żmuda">
+    <title>Systemy liczbowe i ich zastosowania</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="icon.ico"/>
+  </head>
+
+  <body>
+    <body background ="bg.png">
+      <div id="navBar">
+
+        <a class="active" href="javascript:void(0)"> </a>
+        <a href="mainPage.htm">Główna</a>
+        <a href="intro.htm">Wstęp</a>
+        <a href="romanSystem.htm">Rzymski</a>
+        <a href="binarySystem.htm">Binarny</a>
+        <a href="threeSystem.htm">Trójkowy</a>
+        <a href="octSystem.htm">Oktalny</a>
+        <a href="decSystem.htm">Decymalny</a>
+        <a href="hexdecSystem.htm">Heksadecymalny</a>
+          <a href="oneSystem.htm">Jedynkowy</a>
+        <a href="sixtySystem.htm">Sześćdziesiętny</a>
+        <a href="about.htm">O stronie</a>
+      </div>
+
+    <div class="content">
+      <h1>Babiloński system szesnastkowy</h1>
+      Znaki systemu babilońskiego liczą sobie już około <span style="background-color: #4caf50">5000 lat</span>, a zachowały się do naszych czasów na glinianych tabliczkach. Dzięki temu możemy na jakichś podstawach rozważać m.in. wiedzę matematyczną w Babilonii. Posługiwali się oni pismem klinowym. Korzystali z pozycyjnego systemu o podstawie 60.
+
+      <h2>Zapis i konwersja</h2>
+    <p>  Do zapisu liczb w systemie sześćdziesiętnym Babilończycy używali dwóch symboli <ul>
+      <li>reprezentującego jedności <img src="b_1.gif"/></li>
+      <li>reprezentującego dziesiątki <img src="b_10.gif"/></li>
+    </ul></p>
+      <p> Liczby od 1 do 10 wyglądały tak:</p>
+<img src="babilon.png"/>
+
+      <p>Tak zapisywało się liczby od 1 do 59, przy liczbach większych system sześćdziesiętny działał jak każdy inny system pozycyjny.
+</p>
+    <img src="b_1.gif"/><img src="b_1.gif"/><img src="b_1.gif"/>  = 1 &#215; 60<sup>2</sup> + 1 &#215; 60<sup>1</sup> + 1 &#215; 60<sup>0</sup> = 3661
+
+
+      <p><span style="background-color: #4caf50">&#129470 CIEKAWOSTKA: </span> Warto wspomnieć, że Babilończycy nie mieli symbolu reprezentującego 0 - zamiast niego zostawiano puste przestrzenie.
+      Zwykle nie operowano bardzo dużymi liczbami, więc te przestrzenie czy kilka przestrzeni obok siebie nie pojawiało się aż tak często.
+</p>
+      <h2>Zastosowanie</h2>
+    <p>  Choć system ten został wynaleziony wieki temu, obecnie wciąż możemy go zauważyć - godzina składa się z sześćdziesięciu minut oraz minuty z sześćdziesięciu sekund.
+</p>
+
+
+    </div>
+      <div id="footer">
+        <p>Autor: Kinga Żmuda | Czcionka na darmowej licencji firmy <a href="http://fonts.googleapis.com/css?family=Roboto">Google</a></p>
+
+      </div>
+
+      <script>
+      window.onscroll = function() {
+        nav()
+      };
+
+      var navbar = document.getElementById("navBar");
+      var sticky = navbar.offsetTop;
+
+      function nav() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>

@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kinga Żmuda">
+    <title>Systemy liczbowe i ich zastosowania</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="icon.ico"/>
+  </head>
+
+  <body>
+  <body background ="bg.png">
+      <div id="navBar">
+
+        <a class="active" href="javascript:void(0)"> </a>
+        <a href="mainPage.htm">Główna</a>
+        <a href="intro.htm">Wstęp</a>
+        <a href="romanSystem.htm">Rzymski</a>
+        <a href="binarySystem.htm">Binarny</a>
+        <a href="threeSystem.htm">Trójkowy</a>
+        <a href="octSystem.htm">Oktalny</a>
+        <a href="decSystem.htm">Decymalny</a>
+        <a href="hexdecSystem.htm">Heksadecymalny</a>
+          <a href="oneSystem.htm">Jedynkowy</a>
+        <a href="sixtySystem.htm">Sześćdziesiętny</a>
+        <a href="about.htm">O stronie</a>
+      </div>
+
+    <div class="content">
+      <h1>System dwójkowy (binarny)</h1>
+      <p>Zapis binarny to bardzo prosty system pozycyjny - składa się on tylko z dwóch cyfr:</p>
+<p><span style="background-color: #4caf50">0 oraz 1</p></span>
+<p>Jak można się domyślić, jego podstawą jest liczba 2.
+  <p>[Przykład liczby: 101110<sub>2</sub> / 101110<sub>B</sub>]</p>
+<p><span style="background-color: #4caf50">&#129470 CIEKAWOSTKA: </span> System ten  był już stosowany w <span style="background-color: #4caf50"> XVI wieku</span> przez Johna Napiera, choć on zamiast 0 i 1 używał do zapisu liczb liter A i B, jednak można uznać, że zasada była taka sama.
+  Również w notatniku niemieckiego matematyka, G. W. Leibniza znaleziono wpis z <span style="background-color: #4caf50">15 marca 1679 roku</span> znaleziono notatkę dotyczącą zapisu niektórych liczb z użyciem tylko 1 i 0.
+</p>
+
+      <h2>Konwersja</h2>
+      <p></p>
+  <img src="bindec.jpg"/>
+<p></p>
+
+      <p>Aby zamienić zapis dwójkowy liczby na zapis dziesiętny, dodaje się cyfry od lewej pomnożone przez podstawę systemu, czyli 2 do potęgi zaczynając od długości liczby pomniejszonej o 1, kończąc na 0.
+
+            <p><span style="font-size: 28px;">&#11015;</span> Wpisz poniżej liczbę całkowitą w systemie decymalnym, aby zobaczyć jej postać w systemie dwójkowym </p>
+            <table>
+                <tr>
+                    <td><input type="text" id="liczba"></td>
+                    <td><div id="wynik"></div></td>
+                    <td><div id="niee"></div></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Konwertuj liczbę na system binarny" onclick="binary()"></td>
+                </tr>
+            </table>
+            <p>Aby zamienić zapis dziesiętny liczby na zapis dwójkowy, dzieli się ją wielokrotnie przez 2<sub>D</sub>, zapisując resztę. Liczbę powstałą z reszt z dzielenia odczytuje się od ostatniej reszty do pierwszej.<br/>
+
+
+
+            <p><span style="font-size: 28px;">&#11015;</span> Wpisz poniżej liczbę całkowitą w systemie dwójkowym, aby zobaczyć jej postać w systemie dziesiętnym</p>
+            <table>
+                <tr>
+                    <td><input type="text" id="liczbainna"></td>
+                    <td><div id="wynikinny"></div></td>
+                    <td><div id="nie"></div></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Konwertuj liczbę na system decymalny" onclick="decimal()"></td>
+                </tr>
+            </table>
+            <p></p>
+<p>Natomiast konwersje między systemem heksadecymalnym a binarnym prezentuje poniższa grafika:</p>
+<p></p>
+<img src="hexbin.jpg"/>
+
+
+
+      <p>Warto wspomnieć, że w systemie dwójkowym można zapisać nie tylko liczby całkowite, ale m.in. ułamki.
+      Przy konwersji ułamka dziesiętnego z systemu dziesiętnego na binarny zaczyna się od liczby przed przecinkiem w taki sposób, jak przy liczbach całkowitych, natomiast kolejne liczby po przecinku są mnożone przez ujemne potęgi liczby 2 począwszy od -1.
+
+      np. Liczba 0,11<sub>2</sub> = 2<sup>0</sup> &#215; 0 + 2<sup>-1</sup> &#215; 1 + 2<sup>-2</sup> &#215; 1 = 0,75<sub>10</sub></p>
+
+  <p><span style="background-color: #4caf50">&#129470 CIEKAWOSTKA:</span> Przy omawianiu wartości logicznej zdań logicznych dla fałszu przyjmuje się oznaczenie 0, natomiast dla prawdy jest to 1. Te dwie cyfry wykorzystuje się między innymi do obrazowaniu możliwych przypadków dla każdego ze spójników logicznych.</p>
+
+<h2>Arytmetyka</h2>
+    <p>Na liczbach binarnych można także wykonywać działania zgodnie z kilkoma regułami:</p>
+    <p></p>
+    <img src="binaryaryt.jpg"/>
+    <p></p>
+<p>Licząc w słupku liczby zapisujemy tak, aby w tych samych kolumnach były cyfry o takiej samej wadze.</p>
+
+
+</ul>
+
+
+
+
+<h2>Zastosowanie</h2>
+      <p>System binarny jest przede wszystkim stosowany w informatyce i elektronice. W komputerze, płynący prąd jest interpretowany jako 1, a jego brak jako 0. W związku z tym, przetwarzając te wartości mogą powstają czytelne dla człowieka obrazy czy dźwięk.</p>
+
+      <p></p>
+      <img src="comp101.jpg"/>
+      <p></p>
+        <p><span style="background-color: #4caf50">&#129470 CIEKAWOSTKA:</span>Na niektórych przyciskach służących do włączania i wyłączania urządzeń można zauważyć zapisy zbliżone do 1 i 0 - to również ma związek z istnieniem zapisu binarnego.</p>
+        <p></p>
+        <img src="onoff.jpg" width="640" height="469"/>
+        <p></p>
+</div>
+      <div id="footer">
+        <p>Autor: Kinga Żmuda | Czcionka na darmowej licencji firmy <a href="http://fonts.googleapis.com/css?family=Roboto">Google</a></p>
+
+      </div>
+
+      <script>
+        function decimal() {
+
+  var liczbainna = document.getElementById("liczbainna").value;
+
+  if (liczbainna.indexOf('2')>-1) {
+  	document.getElementById("wynikinny").innerHTML = " ";
+  	document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('3')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  	document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+ }else if (liczbainna.indexOf('4')>-1) {
+ document.getElementById("wynikinny").innerHTML = " ";
+  	document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+ }else if (liczbainna.indexOf('5')>-1) {
+ document.getElementById("wynikinny").innerHTML = " ";
+  	document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+ }else if (liczbainna.indexOf('6')>-1) {
+ document.getElementById("wynikinny").innerHTML = " ";
+  	document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+ }else if (liczbainna.indexOf('7')>-1) {
+ document.getElementById("wynikinny").innerHTML = " ";
+  	document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('8')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  	document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('9')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  	document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }
+  else if (liczbainna.indexOf('a')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('b')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('c')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('d')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('e')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('f')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('g')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('h')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }
+  else if (liczbainna.indexOf('i')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('j')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('k')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('l')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('m')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('n')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('o')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('p')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }
+
+  else if (liczbainna.indexOf('r')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('s')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('t')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('u')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('w')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('x')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('y')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }else if (liczbainna.indexOf('z')>-1) {
+  document.getElementById("wynikinny").innerHTML = " ";
+  document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  }
+  else{
+
+	var wynikinny = parseInt((liczbainna), 2);
+   	document.getElementById("wynikinny").innerHTML = wynikinny.toString(10);
+  document.getElementById("nie").innerHTML = " ";
+
+
+
+}
+}
+
+
+function binary() {
+
+var liczba = document.getElementById("liczba").value;
+
+
+if (liczba.indexOf('z')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}
+else if (liczba.indexOf('a')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('b')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('c')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('d')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('e')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('f')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('g')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('h')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}
+else if (liczba.indexOf('i')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('j')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('k')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('l')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('m')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('n')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('o')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('p')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}
+
+else if (liczba.indexOf('r')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('s')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('t')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('u')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('w')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('x')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('y')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}else if (liczba.indexOf('z')>-1) {
+document.getElementById("wynik").innerHTML = " ";
+document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+}
+else{
+
+var wynik = parseInt((liczba), 10);
+document.getElementById("wynik").innerHTML = wynik.toString(2);
+document.getElementById("niee").innerHTML = " ";
+}}
+
+      window.onscroll = function() {
+        nav()
+      };
+
+      var navbar = document.getElementById("navBar");
+      var sticky = navbar.offsetTop;
+
+      function nav() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>

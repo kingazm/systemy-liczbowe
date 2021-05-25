@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kinga Żmuda">
+    <title>Systemy liczbowe i ich zastosowania</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="icon.ico"/>
+  </head>
+
+  <body>
+    <body background ="bg.png">
+      <div id="navBar">
+
+        <a class="active" href="javascript:void(0)"> </a>
+        <a href="mainPage.htm">Główna</a>
+        <a href="intro.htm">Wstęp</a>
+        <a href="romanSystem.htm">Rzymski</a>
+        <a href="binarySystem.htm">Binarny</a>
+        <a href="threeSystem.htm">Trójkowy</a>
+        <a href="octSystem.htm">Oktalny</a>
+        <a href="decSystem.htm">Decymalny</a>
+        <a href="hexdecSystem.htm">Heksadecymalny</a>
+        <a href="oneSystem.htm">Jedynkowy</a>
+        <a href="sixtySystem.htm">Sześćdziesiętny</a>
+        <a href="about.htm">O stronie</a>
+      </div>
+
+    <div class="content">
+      <h1>System jedynkowy</h1>
+      <p>Najprostszy możliwy system liczbowy, w którym do zapisu liczb używa się dokładnie jednego znaku, zwykle</p>
+      <p><span style="background-color: #4caf50">I = 1 lub 1</span></p>
+      <p>Liczby tworzy się przez ustawianie obok siebie takiej ilości I, ile wynosi wartość liczby<br/>
+      np. 11<sub>10</sub> = IIIIIIIIIII</p>
+
+      <span style="background-color: #4caf50">&#129470 CIEKAWOSTKA:</span> Z uwagi na stałą wartość jedynego używanego w systemie jedynkowym znaku można go przyporządkować do grupy systemów addytywnych, jednak bywa też klasyfikowany jako system pozycyjny o podstawie 1, można też przeliczyć liczbę z systemu jedynkowego na decymalny według reguły stosowanej do systemów pozycyjnych (choć jest to w tym przypadku metoda bardzo na około),
+      np. IIIII = 1 &#215; 1<sup>4</sup> + 1 &#215; 1<sup>3</sup> + 1 &#215; 1<sup>2</sup> + 1 &#215; 1<sup>1</sup> + 1 &#215; 1<sup>0</sup> = 1 + 1 + 1 + 1 + 1 = 5<sub>10</sub>
+
+      <h2>Arytmetyka</h2>
+      <p>Na liczbach zapisanych w tym systemie bardzo łatwo wykonuje się dodawanie oraz odejmowanie; aby dodać dwie liczby wystarczy dopisać obok jednego składnika kolejne, a żeby odjąć, skreślić ilość I odjemnika z odjemnej liczby - nieskreślone znaki pokazują wynik. Jeśli odjemnik jest większy niż odjemna, ilość I, które pozostały do skreślenia po skreśleniu wszystkich I odjemnej to wynik ze znakiem minus.
+    </p>
+    <img src="onearyt.jpg"/>
+
+      <h2>Zastosowanie</h2>
+      <p>Nie jest trudno zauważyć niepraktyczność tego zapisu, zwłaszcza przy większych liczbach. Można stosować co prawda pewne ułatwienia w postaci zakreślania każdorazowo ustalonej ilości, by lepiej orientować się przy liczbach rzędu 100, jednak raczej jest on obecnie powszechnie traktowany jako ciekawostka czy metoda w szybkich ręcznych operacjach na niewielkich licznach niż realnie stosowany w konkretnej dziedzinie. Za ewentualny przykład może posłużyć ręczne liczenie głosów w np. wyborach na przewodniczącego klasy. Liczba uczniów to zwykle nie więcej niż 40 osób, dlatego zapisywanie każdego głosu jako kreski przy nazwisku kandydata jest szybkie (a na pewno szybsze niż dopisywanie co chwilę +1 lub skreślanie poprzedniej liczby i zapisywanie nowej) i przy dużej różnicy pozwala łatwo zauważyć wynik.</p>
+      <p></p>
+      <img src="wallcountdown.jpg" width="640" height="469"/>
+      <p></p>
+      <p><span style="background-color: #4caf50">&#129470 CIEKAWOSTKA:</span> Systemem tym posługują się nieliczne społeczności, np. Pigmeje.</p>
+
+
+
+
+    </div>
+      <div id="footer">
+        <p>Autor: Kinga Żmuda | Czcionka na darmowej licencji firmy <a href="http://fonts.googleapis.com/css?family=Roboto">Google</a></p>
+
+      </div>
+
+      <script>
+      window.onscroll = function() {
+        nav()
+      };
+
+      var navbar = document.getElementById("navBar");
+      var sticky = navbar.offsetTop;
+
+      function nav() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>

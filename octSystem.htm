@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kinga Żmuda">
+    <title>Systemy liczbowe i ich zastosowania</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="icon.ico"/>
+  </head>
+
+  <body>
+    <body background ="bg.png">
+      <div id="navBar">
+
+        <a class="active" href="javascript:void(0)"> </a>
+        <a href="mainPage.htm">Główna</a>
+        <a href="intro.htm">Wstęp</a>
+        <a href="romanSystem.htm">Rzymski</a>
+        <a href="binarySystem.htm">Binarny</a>
+        <a href="threeSystem.htm">Trójkowy</a>
+        <a href="octSystem.htm">Oktalny</a>
+        <a href="decSystem.htm">Decymalny</a>
+        <a href="hexdecSystem.htm">Heksadecymalny</a>
+          <a href="oneSystem.htm">Jedynkowy</a>
+        <a href="sixtySystem.htm">Sześćdziesiętny</a>
+        <a href="about.htm">O stronie</a>
+      </div>
+
+    <div class="content">
+      <h1>System ósemkowy (oktalny)</h1>
+      <p>System pozycyjny o podstawie 8, do zapisu w nim liczb używa się ośmiu pierwszych cyfr arabskich:</p>
+      <p><span style="background-color: #4caf50">0, 1, 2, 3, 4, 5, 6, 7</span>
+        <p>[Przykład liczby: 12307<sub>8</sub>/12307<sub>O</sub>]</p>
+
+      <h2>Konwersja</h2>
+      <img src="octdec.jpg"/>
+      <p>Zamiany z systemu decymalnego na oktalny dokonuje się poprzez dzielenie liczby przez 8, zapisywanie reszt, a następnie dzielenie przez 8 wyniku poprzedniego dzielenia.<br/>
+       </p>
+      <p>Wpisz poniżej liczbę całkowitą w systemie decymalnym, aby zobaczyć jej postać w systemie ósemkowym</p>
+      <table>
+          <tr>
+              <td><input type="text" id="liczbainna"></td>
+              <td><div id="wynikinny"></div></td>
+              <td><div id="nie"></div></td>
+          </tr>
+          <tr>
+              <td><input type="submit" value="Konwertuj liczbę na system ósemkowy" onclick="decoct()"></td>
+          </tr>
+      </table>
+
+      <p>Natomiast konwersja z systemu oktalnego na system decymalny polega na dodawaniu jej cyfr. <br/>
+
+
+      <p>Wpisz poniżej liczbę całkowitą w systemie ósemkowym, aby zobaczyć jej postać w systemie dziesiętnym</p>
+      <table>
+          <tr>
+              <td><input type="text" id="liczba"></td>
+              <td><div id="wynik"></div></td>
+
+              <td><div id="niee"></div></td>
+          </tr>
+          <tr>
+              <td><input type="submit" value="Konwertuj liczbę na system decymalny" onclick="octdec()"></td>
+          </tr>
+      </table>
+
+
+
+
+      <h2>Zastosowanie</h2>
+      <p>System ósemkowy jest stosowany w informatyce, choć nieco rzadziej niż system heksadecymalny. Przykładem jego zastosowania jest ustawianie praw do pliku danego obiektu w systemie Linux i językach programowania takich, jak C, C++, Java czy PHP.</p>
+
+
+
+    </div>
+      <div id="footer">
+        <p>Autor: Kinga Żmuda | Czcionka na darmowej licencji firmy <a href="http://fonts.googleapis.com/css?family=Roboto">Google</a></p>
+
+      </div>
+
+      <script>
+      window.onscroll = function() {
+        nav()
+      };
+
+      var navbar = document.getElementById("navBar");
+      var sticky = navbar.offsetTop;
+
+      function nav() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+
+      function decoct() {
+
+  var liczbainna = document.getElementById("liczbainna").value;
+
+  if (liczbainna.indexOf('a') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('b') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('c') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('d') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('e') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('f') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('g') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('h') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('i') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('j') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('k') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('l') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('m') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('n') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('o') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('p') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('r') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('s') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('t') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('u') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczbainna.indexOf('w') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("nie").innerHTML = "Podano błędną liczbę";
+
+
+
+  } else {
+
+    var wynikinny = parseInt((liczbainna), 10);
+    document.getElementById("wynikinny").innerHTML = wynikinny.toString(8);
+    document.getElementById("nie").innerHTML = " ";
+  }
+}
+
+
+function octdec() {
+
+  var liczba = document.getElementById("liczba").value;
+
+  if (liczba.indexOf('a') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('b') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('c') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('d') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('e') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('f') > -1) {
+    document.getElementById("wynikinny").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+  } else if (liczba.indexOf('h') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('8') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('9') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+
+
+  } else if (liczba.indexOf('g') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('h') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('i') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('j') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('k') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+  } else if (liczba.indexOf('l') > -1) {
+    document.getElementById("wynik").innerHTML = " ";
+    document.getElementById("niee").innerHTML = "Podano błędną liczbę";
+
+
+  }
+    else {
+
+      var wynik = parseInt((liczba), 8);
+      document.getElementById("wynik").innerHTML = wynik.toString(10);
+      document.getElementById("niee").innerHTML = " ";
+
+
+
+    }
+  }
+
+      </script>

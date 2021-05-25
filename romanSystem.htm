@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kinga Żmuda">
+    <title>Systemy liczbowe i ich zastosowania</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="icon.ico"/>
+  </head>
+
+  <body>
+  <body background ="bg.png">
+      <div id="navBar">
+
+        <a class="active" href="javascript:void(0)"> </a>
+        <a href="mainPage.htm">Główna</a>
+        <a href="intro.htm">Wstęp</a>
+        <a href="romanSystem.htm">Rzymski</a>
+        <a href="binarySystem.htm">Binarny</a>
+        <a href="threeSystem.htm">Trójkowy</a>
+        <a href="octSystem.htm">Oktalny</a>
+        <a href="decSystem.htm">Decymalny</a>
+        <a href="hexdecSystem.htm">Heksadecymalny</a>
+          <a href="oneSystem.htm">Jedynkowy</a>
+        <a href="sixtySystem.htm">Sześćdziesiętny</a>
+        <a href="about.htm">O stronie</a>
+      </div>
+
+    <div class="content">
+      <h2>System rzymski</h2>
+      <p>Rzymski system zapisywania liczb to obecnie najbardziej rozpoznawalny z systemów liczbowych addytywnych. </p>
+<!-- <p>Jednak pierwotna forma nieco odbiega od tej, którą znamy dziś przede wszystkim w kwestii praktyczności; do zapisu używano jedynie prostych kresek. Był to bardzo prosty sposób, choć niezbyt wygodny przy odczytywaniu kiedy w grę wchodziły większe liczby.
+--> W systemie rzymskim posługujemy się znakami:</p>
+<p><span style="background-color: #4caf50">I (1), V (5), X (10), L (50), C (100), D (500), M (1000). </span></p>
+<p>[Przykład liczby: VIII]</p>
+<p><span style="background-color: #4caf50">&#129470 CIEKAWOSTKA</span> zdanie, które może pomóc zapamiętać kolejność 4 największych wartościami znaków systemu rzymskiego to <span style="font-style": italic> Lecą Cegły, Dom Murują.</span>
+</p>
+<p>Jako, że rzymski sposób zapisywania liczb jest sposobem addytywnym wartość danej liczby określa się na podstawie sumy wartości jej znaków cyfrowych. 
+</p>
+<p>Oprócz tego obowiązuje w nim kilka reguł: <ul>
+<li>Liczby zapisuje się od lewej do prawej.</li>
+<li>Dąży się do użycia jak najmniejszej ilości znaków, dlatego liczba 50 to L a nie XXXXX. </li>
+<li>Koło siebie mogą stać nie więcej niż trzy znaki I, X, C lub M oraz nie więcej niż jeden znak V, L, D.</li>
+<li>Przed znakiem liczby większej może stać co najwyżej jeden znak mniejszej, spośród I, X, C.</li>
+<li>Znak mniejszy przed większym oznacza odejmowanie, znak mniejszy za większym oznacza dodawanie wartości.</li>
+</p></ul>
+
+<p><span style="background-color: #4caf50">&#129470 CIEKAWOSTKA:</span> niektóre ułamki, a konkretnie te o mianowniku 12, mają specjalny rzymski zapis. Wygląda on tak: </p>
+<p></p>
+<img src="romantabel.png"/>
+<p></p>
+
+<h2>Zastosowanie</h2>
+<p>Dziś system rzymski używany przede wszystkim do:<ul>
+<li>oznaczania miesięcy w zapisie dat,</li>
+<li>oznaczania godzin na zegarach z cyferblatem,</li>
+<li>numeracji wieków, np. XIX wiek (dziewiętnasty wiek),</li>
+<li>zapisu liczebników początkowych, np. klas, tomów książek.</li>
+</p></ul>
+<img src="clock.jpg"/>
+
+    </div>
+      <div id="footer">
+        <p>Autor: Kinga Żmuda | Czcionka na darmowej licencji firmy <a href="http://fonts.googleapis.com/css?family=Roboto">Google</a></p>
+
+      </div>
+
+      <script>
+      window.onscroll = function() {
+        nav()
+      };
+
+      var navbar = document.getElementById("navBar");
+      var sticky = navbar.offsetTop;
+
+      function nav() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
